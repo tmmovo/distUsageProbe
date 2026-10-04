@@ -1,5 +1,5 @@
 # distUsageProbe
-**声明：本项目完全由AI完成，包括宣传视频，介意的可以无视**
+**声明：本项目完全由AI完成，包括宣传视频，介意的可以无视，源码已经打包在Release中**
 
 # 用量面板 · Usage Panel
 
@@ -46,11 +46,9 @@
 
 ## 安装
 
-### 1. 克隆
+### 1. 下载Release
 
-```bash
-git clone https://github.com/tmmovo/distUsageProbe.git
-```
+[https://github.com/tmmovo/distUsageProbe/releases](https://github.com/tmmovo/distUsageProbe/releases)
 
 ### 2. 放进扩展目录
 
@@ -217,11 +215,6 @@ rm -rf ~/.workbuddy/usage-panel-data                 # 顺手删数据（可选�
 
 - **逐行流式扫描**，不把整个文件读进内存 —— 数据量再大内存也平稳（实测常驻约 78 MB）。
 - **索引文件**加速常用查询，避免每次打开都重扫。
-- **30fps → 60fps**：UI 素材是 30fps，渲染时用慢放铺满镜头而不是插帧，保持画面干净。
-- **零硬切**：所有元素出场都走统一封装 `<Enter>`（淡入 + 位移 + 可选缩放），  
-  禁止裸写 `opacity: 0→1`。
-- **不建不透明黑底**：镜头组件不画黑底，保留幕底的星点与雾底。
-
 ---
 
 ## 开发者：改完怎么生效
@@ -242,4 +235,4 @@ git clone https://github.com/tmmovo/distUsageProbe.git ~/.workbuddy/extensions-d
 
 ## 许可
 
-MIT
+GPL3
